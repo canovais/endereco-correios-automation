@@ -27,7 +27,9 @@ Será necessário validar pelo menos o retorno de 3 logradouros, ou seja, utiliz
 
 *2) Realize as alterações necessárias para construção/automação do teste;*
 
-*3) Adicione todos os arquivos criados/alterados (todos mesmo);*
+*3) Crie uma branch nova `git checkout -b NOME-DA-BRANCH`;*
+
+*4) Adicione todos os arquivos criados/alterados (todos mesmo);*
 
 *Para adicionar todos os arquivos:*
 ```
@@ -39,12 +41,12 @@ git add .
 git add -i
 ```
 
-*4) Gere um patch conforme comando de exemplo abaixo;*
+*5) Gere um patch conforme comando de exemplo abaixo;*
 
 ```
-git diff --cached > seu_nome.patch
+git diff --cached --binary main > seu_nome.patch
 ```
 
-*5) Nos envie o patch através do email que entraremos em contato.*
+*6) Nos envie o patch através do email que entraremos em contato.*
 
 ### Boa sorte!
