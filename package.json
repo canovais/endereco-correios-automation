@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-puppeteer": "^8.0.6",
+    "puppeteer": "^19.8.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^6.0.0"
+  },
+  "scripts": {
+    "test-front": "cucumber-js --tags @front -f json:cucumber-report.json",
+    "test-api": "cucumber-js --tags @api -f json:cucumber-report.json",
+    "report":"node report.js"
+  }
+}

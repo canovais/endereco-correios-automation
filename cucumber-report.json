@@ -1,0 +1,115 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Endereços (API)",
+    "line": 2,
+    "id": "endereços-(api)",
+    "tags": [
+      {
+        "name": "@api",
+        "line": 1
+      }
+    ],
+    "uri": "features\\tests\\pesquisa_endereco_api.feature",
+    "elements": [
+      {
+        "id": "endereços-(api);pesquisar-um-endereço-que-retorne-3-ou-mais-logradouros-via-api-correios",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Pesquisar um endereço que retorne 3 ou mais logradouros via API Correios",
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\api\\api_correio.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2677000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\front_correio.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Consulto um endereço via API",
+            "match": {
+              "location": "features\\api\\api_correio.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9805000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "O CEP é válido",
+            "match": {
+              "location": "features\\api\\api_correio.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Três ou mais CEPs devem ser apresentados",
+            "match": {
+              "location": "features\\api\\api_correio.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\front_correio.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 943000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\api\\api_correio.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 717000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
